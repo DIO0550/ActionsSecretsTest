@@ -1,10 +1,11 @@
-name: iOS starter workflow
+name: SECRETS TEST
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches-ignore:
+      - '**'
+    tags:
+      - '*'
 
 jobs:
   build:
