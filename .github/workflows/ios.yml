@@ -17,4 +17,8 @@ jobs:
         env:
           PRIVATE_KEY: ${{secrets.TEST_PRIVATE_KEY}}
           PRIVATE_KEY_ID: ${{secrets.TEST_PRIVATE_KEY_ID}}
-        
+        run: |
+          PRIVATE_KEY_FILE_NAME="AuthKey_${PRIVATE_KEY_ID}.p8" 
+          mkdir ~/.private_keys
+          ls ~
+          
