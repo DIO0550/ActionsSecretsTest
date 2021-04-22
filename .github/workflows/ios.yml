@@ -20,5 +20,6 @@ jobs:
         run: |
           PRIVATE_KEY_FILE_NAME="AuthKey_${PRIVATE_KEY_ID}.p8" 
           mkdir ~/.private_keys
-          ls ~
+          echo ${PRIVATE_KEY} >> ~/.private_keys/$PRIVATE_KEY_FILE_NAME
+          ls ~/.private_keys
           
